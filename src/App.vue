@@ -17,21 +17,21 @@
         </svg>
         <div id="result"> مؤشر الاحتمالية </div>
       </div>
-      <form  method="post" id="contact_form">
+      <form  method="get" id="contact_form">
         <div class="name">
           <label for="name1"></label>
           <input type="text" placeholder="اسم الجد" name="name1" id="Gfather" >
         </div>
         <div class="email">
-          <label for="name"></label>
-          <input type="text" placeholder="اسم الأب" name="name" id="father" >
+          <label for="email"></label>
+          <input type="text" placeholder="اسم الأب" name="email" id="father" >
         </div>
         <div class="telephone">
           <label for="name"></label>
           <input type="text" placeholder="اسم الأبن" name="telephone" id="son" >
         </div>
         <div class="submit">
-          <input type="submit" value="اختبر الآن" id="form_button" @click="gen" />
+          <input type="button" value="اختبر الآن" id="form_button" @click="gen" />
         </div>
 
       </form><!-- // End form -->
