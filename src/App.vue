@@ -84,7 +84,10 @@ export default {
     if (freq >= 5) {
       document.getElementById('result').innerHTML =
         ' احتمالية التشابه مرتفعة جدًا، على الأغلب يوجد هناك ' + " " + freq*2000 + " " + "شخص بنفس الاسم، وقد يوجد من بينهم حوالي" + " " + (freq*2000)*(0.001) + " " + " شخص مُدان بأحكام قضائية "
-
+    }
+    else if (freq <= 1) {
+      document.getElementById('result').innerHTML =
+        ' احتمالية التشابه منخفضة، اختيار هذا الاسم سوف يكون اختيار آمن بإذن الله ' 
     }
 
     }
